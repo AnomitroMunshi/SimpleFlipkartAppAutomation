@@ -3,25 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <listeners>
     <listener class-name="com.callhub.flipkart.listeners.MyTrnasformer"/>
+    <listener class-name="com.callhub.flipkart.report.ExtentReporterNG"/>
   </listeners>
-  <test thread-count="5" name="ProductpageTest(failed)">
-    <classes>
-      <class name="com.callhub.flipkart.tests.ProductpageTest">
-        <methods>
-          <include name="teardown"/>
-          <include name="verifyCartAddition"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.callhub.flipkart.tests.ProductpageTest -->
-    </classes>
-  </test> <!-- ProductpageTest(failed) -->
   <test thread-count="5" name="CartpageTest(failed)">
     <classes>
       <class name="com.callhub.flipkart.tests.CartPageTest">
         <methods>
           <include name="setUp"/>
-          <include name="logoutfromApp"/>
           <include name="teardown"/>
+          <include name="removeFromCart"/>
         </methods>
       </class> <!-- com.callhub.flipkart.tests.CartPageTest -->
     </classes>
