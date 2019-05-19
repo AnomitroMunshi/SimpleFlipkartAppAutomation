@@ -1,24 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test thread-count="5" name="SearchPageTest(failed)">
+  <listeners>
+    <listener class-name="com.callhub.flipkart.listeners.MyTrnasformer"/>
+  </listeners>
+  <test thread-count="5" name="ProductpageTest(failed)">
     <classes>
-      <class name="com.callhub.flipkart.tests.SearchPageTest">
+      <class name="com.callhub.flipkart.tests.ProductpageTest">
         <methods>
-          <include name="countProductsOnPage"/>
           <include name="teardown"/>
-          <include name="clickonProduct"/>
+          <include name="verifyCartAddition"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.callhub.flipkart.tests.SearchPageTest -->
+      </class> <!-- com.callhub.flipkart.tests.ProductpageTest -->
     </classes>
-  </test> <!-- SearchPageTest(failed) -->
+  </test> <!-- ProductpageTest(failed) -->
   <test thread-count="5" name="CartpageTest(failed)">
     <classes>
       <class name="com.callhub.flipkart.tests.CartPageTest">
         <methods>
           <include name="setUp"/>
           <include name="ScreenshotPage"/>
+          <include name="logoutfromApp"/>
           <include name="teardown"/>
           <include name="removeFromCart"/>
         </methods>

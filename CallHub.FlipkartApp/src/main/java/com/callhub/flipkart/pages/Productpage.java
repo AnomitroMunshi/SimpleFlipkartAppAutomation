@@ -17,7 +17,7 @@ public class Productpage extends Driver{
 
 	public CartPage addProductToCart() throws InterruptedException {
 		addToCart.click();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		return new CartPage();
 		
 	}

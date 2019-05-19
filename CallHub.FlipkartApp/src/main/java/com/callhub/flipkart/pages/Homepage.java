@@ -54,7 +54,7 @@ public class Homepage extends Driver{
 		
 		//TestUtil.toBeclickable(searchBox);
 		searchBox.sendKeys(product);
-		//driver.manage().timeouts().implicitlyWait(25, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		searchBox.sendKeys(Keys.ENTER);
 		
 		return new SearchPage();

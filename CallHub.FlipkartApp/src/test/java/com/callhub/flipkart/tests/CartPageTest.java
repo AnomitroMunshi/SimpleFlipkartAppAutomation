@@ -52,6 +52,13 @@ public class CartPageTest extends Driver{
 		Assert.assertEquals(msg, prop.getProperty("emptyCartMsg"));
 	}
 	
+	@Test(priority=3)
+	public void logoutfromApp() {
+		cart.Logout();
+		Assert.assertTrue(cart.verifyLogout());
+	}
+	
+	
 	@AfterMethod
 	public void teardown() {
 		driver.quit();
