@@ -57,7 +57,7 @@ public class SearchPageTest extends Driver {
 	
 	@AfterMethod
 	public void teardown() {
-		//driver.close();
+		driver.close();
 		
 	}
 }

@@ -18,6 +18,7 @@
       <class name="com.callhub.flipkart.tests.CartPageTest">
         <methods>
           <include name="setUp"/>
+          <include name="ScreenshotPage"/>
           <include name="teardown"/>
           <include name="removeFromCart"/>
         </methods>
