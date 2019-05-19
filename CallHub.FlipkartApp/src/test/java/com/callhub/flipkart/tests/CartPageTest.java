@@ -2,6 +2,8 @@ package com.callhub.flipkart.tests;
 
 import java.io.IOException;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.TakesScreenshot;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -16,12 +18,14 @@ import com.callhub.flipkart.pages.Productpage;
 import com.callhub.flipkart.pages.SearchPage;
 import com.callhub.flipkart.util.TestUtil;
 
+
 public class CartPageTest extends Driver{
 	LoginPage loginPage;
 	Homepage homepage;
 	SearchPage searchpage;
 	Productpage productpage;
 	CartPage cart;
+	public static Logger log=LogManager.getLogger(Driver.class.getName());
 
 	public CartPageTest() {
 		super();
@@ -30,6 +34,7 @@ public class CartPageTest extends Driver{
 	@BeforeMethod
 	public void setUp() throws InterruptedException {
 		initialize();
+		log.info("Driver loaded!");
 		loginPage=new LoginPage();
 		homepage=loginPage.LoginToHome(prop.getProperty("email"), prop.getProperty("pass"));
 		searchpage=homepage.Search(prop.getProperty("toSearch"));

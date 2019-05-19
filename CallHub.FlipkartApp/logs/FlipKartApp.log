@@ -1,0 +1,14 @@
+23:36:06.422 [main] INFO  com.callhub.flipkart.tests.LoginPageTest - Loading Driver
+23:36:19.519 [main] INFO  com.callhub.flipkart.tests.LoginPageTest - Driver loaded and Traversing to Login Page
+23:36:19.522 [main] INFO  com.callhub.flipkart.pages.LoginPage - initializing driver
+23:36:19.540 [main] INFO  com.callhub.flipkart.pages.LoginPage - Inside Login
+23:36:19.540 [main] INFO  com.callhub.flipkart.pages.LoginPage - clicking on email
+23:36:19.582 [main] INFO  com.callhub.flipkart.pages.LoginPage - clicked
+23:36:19.582 [main] INFO  com.callhub.flipkart.pages.LoginPage - Typing in username
+23:36:47.708 [main] INFO  com.callhub.flipkart.tests.LoginPageTest - Loading Driver
+23:37:06.562 [main] INFO  com.callhub.flipkart.tests.LoginPageTest - Driver loaded and Traversing to Login Page
+23:37:06.564 [main] INFO  com.callhub.flipkart.pages.LoginPage - initializing driver
+23:37:06.591 [main] INFO  com.callhub.flipkart.pages.LoginPage - Inside Login
+23:37:06.591 [main] INFO  com.callhub.flipkart.pages.LoginPage - clicking on email
+23:37:06.665 [main] INFO  com.callhub.flipkart.pages.LoginPage - clicked
+23:37:06.665 [main] INFO  com.callhub.flipkart.pages.LoginPage - Typing in username

@@ -32,7 +32,16 @@
         </configuration>
       </plugin>
       </plugins>
-      </build>
+      
+<resources>
+ <resource>
+        <directory>src\main\java\com\callhub\flipkart\resources</directory>
+        <filtering>true</filtering>
+      </resource>
+</resources>   
+      
+      
+</build>
       
       <properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -68,11 +77,17 @@
 		    <artifactId>extentreports</artifactId>
 		    <version>2.41.2</version>
 		</dependency>
-		<dependency>
-   			 <groupId>com.aventstack</groupId>
-   			 <artifactId>extentreports</artifactId>
-   			 <version>3.1.5</version>
-</dependency>
 		
+<dependency>
+    <groupId>org.apache.logging.log4j</groupId>
+    <artifactId>log4j-api</artifactId>
+    <version>2.11.1</version>
+  </dependency>
+  <dependency>
+    <groupId>org.apache.logging.log4j</groupId>
+    <artifactId>log4j-core</artifactId>
+    <version>2.11.1</version>
+  </dependency>
+
   </dependencies>
 </project>

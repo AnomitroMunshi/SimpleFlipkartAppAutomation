@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+	<Properties>
+		<Property name="basePath">./logs</Property>
+	</Properties>
+
+	<Appenders>
+		<RollingFile name="File" fileName="${basePath}/FlipKartApp.log"
+			filePattern="${basePath}/FlipKartApp-%d{yyyy-MM-dd}.log">
+			<PatternLayout
+				pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+			<SizeBasedTriggeringPolicy size="1000000" />
+		</RollingFile>
+		
+		<!-- <Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout
+				pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+		</Console> -->
+		
+	</Appenders>
+	<Loggers>
+		<Root level="trace">
+			<AppenderRef ref="File" />
+		</Root>
+	</Loggers>
+</Configuration>
+
