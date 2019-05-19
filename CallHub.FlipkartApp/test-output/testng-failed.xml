@@ -20,10 +20,8 @@
       <class name="com.callhub.flipkart.tests.CartPageTest">
         <methods>
           <include name="setUp"/>
-          <include name="ScreenshotPage"/>
           <include name="logoutfromApp"/>
           <include name="teardown"/>
-          <include name="removeFromCart"/>
         </methods>
       </class> <!-- com.callhub.flipkart.tests.CartPageTest -->
     </classes>
