@@ -1,11 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Flipkart App test">
-  <test name="check" preserve-order="true">
-		<classes>
-			<class name="com.callhub.flipkart.tests.TestSetup"></class>
-			
-		</classes>
-	</test>
-   <!-- Test -->
+<suite name="Suite" preserve-order="true">
+  <test thread-count="5" name="LoginPageTest">
+    <classes>
+      <class name="com.callhub.flipkart.tests.LoginPageTest"/>
+    </classes>
+  </test>
+   <test thread-count="5" name="HomePageTest">
+    <classes>
+      <class name="com.callhub.flipkart.tests.HomepageTest"/>
+    </classes>
+  </test> 
+   <test thread-count="5" name="SearchPageTest">
+    <classes>
+      <class name="com.callhub.flipkart.tests.SearchPageTest"/>
+    </classes>
+  </test>
+  <test thread-count="5" name="ProductpageTest">
+    <classes>
+      <class name="com.callhub.flipkart.tests.ProductpageTest"/>
+    </classes>
+  </test>
+  <test thread-count="5" name="CartpageTest">
+    <classes>
+      <class name="com.callhub.flipkart.tests.CartPageTest"/>
+    </classes>
+  </test>
+  
+  <!-- Test -->
 </suite> <!-- Suite -->
