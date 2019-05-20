@@ -2,6 +2,7 @@ package com.callhub.flipkart.tests;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -30,12 +31,23 @@ public class LoginPageTest extends Driver {
 	
 	@Test(priority = 1)
 	public void verifyLogin() {
-
-		homepage=loginPage.LoginToHome(prop.getProperty("email"), prop.getProperty("pass"));
+		log.info("Sending username and password to login page!");
+		try{
+			homepage=loginPage.LoginToHome(prop.getProperty("email"), prop.getProperty("pass"));
+			if(homepage!=null) {
+				log.info("Successfully Logged in");
+				}
+			}catch(Exception e) {
+				log.error("Login failed!");
+				Assert.fail("Homepage=null");
+		}
+			
 	}
 
 	@AfterMethod
 	public void tearDown(){
-		driver.close();
+		log.info("Closing browser");
+		//driver.close();
+		log.info("Browser closed");
 	}
 }

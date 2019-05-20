@@ -8,6 +8,7 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.SkipException;
 
 import com.callhub.flipkart.base.Driver;
 
@@ -29,12 +30,15 @@ public class LoginPage extends Driver {
 	@FindBy(xpath="//button[@class='_2AkmmA _1LctnI _7UHT_c']")
 	WebElement loginButton;
 	
+	@FindBy(xpath="//*[@class='ZAtlA-']")
+	WebElement errorLabel;
+	
 	public LoginPage() {
 		log.info("initializing driver");
 		PageFactory.initElements(driver, this);
 	}
 	
-	public Homepage LoginToHome(String username,String pass) {
+	public Homepage LoginToHome(String username,String pass) throws Exception {
 		log.info("Inside Login");
 		log.info("clicking on email");
 		email.click();
@@ -43,19 +47,31 @@ public class LoginPage extends Driver {
 		email.sendKeys(username);
 		try {
 			driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+			
 			conti.click();
+			log.info("Continue button Found! Clicking Continue!");
 			loginwithpass.click();
+			log.info("Clicking Login with Pass");
 			password.click();
 			password.sendKeys(pass);
+			log.info("Password given");
 		}
 		catch(NoSuchElementException e) {
-			System.out.println("Insode else");
+			log.info("Exception thrown: Continue button not present. Proceeding with normal login. ");
 			password.click();
 			password.sendKeys(pass);
+			log.info("Password entered.");
 		}
 		loginButton.click();
-		return new Homepage();
-		
+		log.info("Login button clicked.");
+		if(!errorLabel.isDisplayed()) {	
+			log.info("Logged IN..going to HomePage.");
+			return new Homepage();
+		}
+		else {
+			log.error("Your username or password is incorrect");
+			throw new Exception("Your username or password is incorrect");
+		}
 	}
 
 }

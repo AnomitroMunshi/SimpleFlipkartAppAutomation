@@ -1,14 +1,73 @@
-23:36:06.422 [main] INFO  com.callhub.flipkart.tests.LoginPageTest - Loading Driver
-23:36:19.519 [main] INFO  com.callhub.flipkart.tests.LoginPageTest - Driver loaded and Traversing to Login Page
-23:36:19.522 [main] INFO  com.callhub.flipkart.pages.LoginPage - initializing driver
-23:36:19.540 [main] INFO  com.callhub.flipkart.pages.LoginPage - Inside Login
-23:36:19.540 [main] INFO  com.callhub.flipkart.pages.LoginPage - clicking on email
-23:36:19.582 [main] INFO  com.callhub.flipkart.pages.LoginPage - clicked
-23:36:19.582 [main] INFO  com.callhub.flipkart.pages.LoginPage - Typing in username
-23:36:47.708 [main] INFO  com.callhub.flipkart.tests.LoginPageTest - Loading Driver
-23:37:06.562 [main] INFO  com.callhub.flipkart.tests.LoginPageTest - Driver loaded and Traversing to Login Page
-23:37:06.564 [main] INFO  com.callhub.flipkart.pages.LoginPage - initializing driver
-23:37:06.591 [main] INFO  com.callhub.flipkart.pages.LoginPage - Inside Login
-23:37:06.591 [main] INFO  com.callhub.flipkart.pages.LoginPage - clicking on email
-23:37:06.665 [main] INFO  com.callhub.flipkart.pages.LoginPage - clicked
-23:37:06.665 [main] INFO  com.callhub.flipkart.pages.LoginPage - Typing in username
+06:18:47.580 [main] INFO  com.callhub.flipkart.tests.LoginPageTest - Loading Driver
+06:18:58.394 [main] INFO  com.callhub.flipkart.tests.LoginPageTest - Driver loaded and Traversing to Login Page
+06:18:58.400 [main] INFO  com.callhub.flipkart.pages.LoginPage - initializing driver
+06:18:58.469 [main] INFO  com.callhub.flipkart.tests.LoginPageTest - Sending username and password to login page!
+06:18:58.470 [main] INFO  com.callhub.flipkart.pages.LoginPage - Inside Login
+06:18:58.470 [main] INFO  com.callhub.flipkart.pages.LoginPage - clicking on email
+06:18:58.614 [main] INFO  com.callhub.flipkart.pages.LoginPage - clicked
+06:18:58.641 [main] INFO  com.callhub.flipkart.pages.LoginPage - Typing in username
+06:19:02.013 [main] INFO  com.callhub.flipkart.pages.LoginPage - Exception thrown: Continue button not present. Proceeding with normal login. 
+06:19:02.171 [main] INFO  com.callhub.flipkart.pages.LoginPage - Password entered.
+06:19:02.261 [main] INFO  com.callhub.flipkart.pages.LoginPage - Logged IN..going to HomePage.
+06:19:02.263 [main] INFO  com.callhub.flipkart.tests.LoginPageTest - Successfully Logged in
+06:19:02.267 [main] INFO  com.callhub.flipkart.tests.LoginPageTest - Closing browser
+06:19:02.384 [main] INFO  com.callhub.flipkart.tests.LoginPageTest - Browser closed
+06:20:27.704 [main] INFO  com.callhub.flipkart.tests.LoginPageTest - Loading Driver
+06:20:39.299 [main] INFO  com.callhub.flipkart.tests.LoginPageTest - Driver loaded and Traversing to Login Page
+06:20:39.301 [main] INFO  com.callhub.flipkart.pages.LoginPage - initializing driver
+06:20:39.329 [main] INFO  com.callhub.flipkart.tests.LoginPageTest - Sending username and password to login page!
+06:20:39.329 [main] INFO  com.callhub.flipkart.pages.LoginPage - Inside Login
+06:20:39.329 [main] INFO  com.callhub.flipkart.pages.LoginPage - clicking on email
+06:20:39.455 [main] INFO  com.callhub.flipkart.pages.LoginPage - clicked
+06:20:39.456 [main] INFO  com.callhub.flipkart.pages.LoginPage - Typing in username
+06:20:42.838 [main] INFO  com.callhub.flipkart.pages.LoginPage - Exception thrown: Continue button not present. Proceeding with normal login. 
+06:20:43.182 [main] INFO  com.callhub.flipkart.pages.LoginPage - Password entered.
+06:20:43.303 [main] INFO  com.callhub.flipkart.pages.LoginPage - Logged IN..going to HomePage.
+06:20:43.307 [main] INFO  com.callhub.flipkart.tests.LoginPageTest - Successfully Logged in
+06:20:43.313 [main] INFO  com.callhub.flipkart.tests.LoginPageTest - Closing browser
+06:20:43.313 [main] INFO  com.callhub.flipkart.tests.LoginPageTest - Browser closed
+06:28:48.772 [main] INFO  com.callhub.flipkart.tests.LoginPageTest - Loading Driver
+06:28:59.348 [main] INFO  com.callhub.flipkart.tests.LoginPageTest - Driver loaded and Traversing to Login Page
+06:28:59.355 [main] INFO  com.callhub.flipkart.pages.LoginPage - initializing driver
+06:28:59.396 [main] INFO  com.callhub.flipkart.tests.LoginPageTest - Sending username and password to login page!
+06:28:59.397 [main] INFO  com.callhub.flipkart.pages.LoginPage - Inside Login
+06:28:59.397 [main] INFO  com.callhub.flipkart.pages.LoginPage - clicking on email
+06:28:59.550 [main] INFO  com.callhub.flipkart.pages.LoginPage - clicked
+06:28:59.551 [main] INFO  com.callhub.flipkart.pages.LoginPage - Typing in username
+06:29:02.913 [main] INFO  com.callhub.flipkart.pages.LoginPage - Exception thrown: Continue button not present. Proceeding with normal login. 
+06:29:03.090 [main] INFO  com.callhub.flipkart.pages.LoginPage - Password entered.
+06:29:03.172 [main] INFO  com.callhub.flipkart.pages.LoginPage - Login button clicked.
+06:29:03.343 [main] ERROR com.callhub.flipkart.pages.LoginPage - Your username or password is incorrect
+06:29:03.344 [main] ERROR com.callhub.flipkart.tests.LoginPageTest - Login failed!
+06:29:03.348 [main] INFO  com.callhub.flipkart.tests.LoginPageTest - Closing browser
+06:29:03.348 [main] INFO  com.callhub.flipkart.tests.LoginPageTest - Browser closed
+06:31:04.454 [main] INFO  com.callhub.flipkart.tests.LoginPageTest - Loading Driver
+06:31:14.405 [main] INFO  com.callhub.flipkart.tests.LoginPageTest - Driver loaded and Traversing to Login Page
+06:31:14.410 [main] INFO  com.callhub.flipkart.pages.LoginPage - initializing driver
+06:31:14.461 [main] INFO  com.callhub.flipkart.tests.LoginPageTest - Sending username and password to login page!
+06:31:14.461 [main] INFO  com.callhub.flipkart.pages.LoginPage - Inside Login
+06:31:14.461 [main] INFO  com.callhub.flipkart.pages.LoginPage - clicking on email
+06:31:14.632 [main] INFO  com.callhub.flipkart.pages.LoginPage - clicked
+06:31:14.632 [main] INFO  com.callhub.flipkart.pages.LoginPage - Typing in username
+06:31:18.102 [main] INFO  com.callhub.flipkart.pages.LoginPage - Exception thrown: Continue button not present. Proceeding with normal login. 
+06:31:18.296 [main] INFO  com.callhub.flipkart.pages.LoginPage - Password entered.
+06:31:18.386 [main] INFO  com.callhub.flipkart.pages.LoginPage - Login button clicked.
+06:31:18.651 [main] ERROR com.callhub.flipkart.pages.LoginPage - Your username or password is incorrect
+06:31:18.652 [main] ERROR com.callhub.flipkart.tests.LoginPageTest - Login failed!
+06:31:18.670 [main] INFO  com.callhub.flipkart.tests.LoginPageTest - Closing browser
+06:31:18.670 [main] INFO  com.callhub.flipkart.tests.LoginPageTest - Browser closed
+06:33:39.063 [main] INFO  com.callhub.flipkart.tests.LoginPageTest - Loading Driver
+06:33:49.039 [main] INFO  com.callhub.flipkart.tests.LoginPageTest - Driver loaded and Traversing to Login Page
+06:33:49.046 [main] INFO  com.callhub.flipkart.pages.LoginPage - initializing driver
+06:33:49.096 [main] INFO  com.callhub.flipkart.tests.LoginPageTest - Sending username and password to login page!
+06:33:49.096 [main] INFO  com.callhub.flipkart.pages.LoginPage - Inside Login
+06:33:49.096 [main] INFO  com.callhub.flipkart.pages.LoginPage - clicking on email
+06:33:49.244 [main] INFO  com.callhub.flipkart.pages.LoginPage - clicked
+06:33:49.244 [main] INFO  com.callhub.flipkart.pages.LoginPage - Typing in username
+06:33:52.676 [main] INFO  com.callhub.flipkart.pages.LoginPage - Exception thrown: Continue button not present. Proceeding with normal login. 
+06:33:53.020 [main] INFO  com.callhub.flipkart.pages.LoginPage - Password entered.
+06:33:53.150 [main] INFO  com.callhub.flipkart.pages.LoginPage - Login button clicked.
+06:33:53.340 [main] ERROR com.callhub.flipkart.pages.LoginPage - Your username or password is incorrect
+06:33:53.341 [main] ERROR com.callhub.flipkart.tests.LoginPageTest - Login failed!
+06:33:53.349 [main] INFO  com.callhub.flipkart.tests.LoginPageTest - Closing browser
+06:33:53.350 [main] INFO  com.callhub.flipkart.tests.LoginPageTest - Browser closed

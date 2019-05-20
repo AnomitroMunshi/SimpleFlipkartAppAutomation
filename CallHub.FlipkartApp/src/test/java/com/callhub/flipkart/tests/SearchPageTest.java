@@ -32,7 +32,7 @@ public class SearchPageTest extends Driver {
 	}
 	
 	@BeforeMethod
-	public void setUp() throws InterruptedException {
+	public void setUp() throws Exception {
 		initialize();
 		loginPage=new LoginPage();
 		homepage=loginPage.LoginToHome(prop.getProperty("email"), prop.getProperty("pass"));

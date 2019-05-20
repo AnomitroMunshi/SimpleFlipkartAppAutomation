@@ -24,7 +24,7 @@ public class HomepageTest extends Driver {
 	}
 
 	@BeforeMethod
-	public void setUp() {
+	public void setUp() throws Exception {
 		initialize();
 		login=new LoginPage();
 		homepage = login.LoginToHome(prop.getProperty("email"), prop.getProperty("pass"));

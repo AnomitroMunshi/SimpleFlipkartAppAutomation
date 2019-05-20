@@ -32,7 +32,7 @@ public class CartPageTest extends Driver{
 	}
 	
 	@BeforeMethod
-	public void setUp() throws InterruptedException {
+	public void setUp() throws Exception {
 		initialize();
 		log.info("Driver loaded!");
 		loginPage=new LoginPage();
