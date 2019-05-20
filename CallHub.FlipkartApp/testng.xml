@@ -4,7 +4,7 @@
 <listeners>
 	<listener class-name="com.callhub.flipkart.listeners.MyTrnasformer"></listener>
 	<listener class-name="com.callhub.flipkart.report.ExtentReporterNG"></listener>
-	<!-- <listener class-name="com.callhub.flipkart.listeners.TestNGListener"></listener> -->
+	<listener class-name="com.callhub.flipkart.listeners.Listener"></listener>
 </listeners>
   <test thread-count="5" name="LoginPageTest">
     <classes>

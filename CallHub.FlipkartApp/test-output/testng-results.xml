@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="14334" started-at="2019-05-20T01:03:39Z" finished-at="2019-05-20T01:03:53Z">
+  <suite name="Default suite" duration-ms="17494" started-at="2019-05-20T01:25:23Z" finished-at="2019-05-20T01:25:41Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="14334" started-at="2019-05-20T01:03:39Z" finished-at="2019-05-20T01:03:53Z">
+    <test name="Default test" duration-ms="17494" started-at="2019-05-20T01:25:23Z" finished-at="2019-05-20T01:25:41Z">
       <class name="com.callhub.flipkart.tests.LoginPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.callhub.flipkart.tests.LoginPageTest@747ddf94]" name="setUp" is-config="true" duration-ms="10036" started-at="2019-05-20T01:03:39Z" finished-at="2019-05-20T01:03:49Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.callhub.flipkart.tests.LoginPageTest@55183b20]" name="setUp" is-config="true" duration-ms="10130" started-at="2019-05-20T01:25:23Z" finished-at="2019-05-20T01:25:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="verifyLogin()[pri:1, instance:com.callhub.flipkart.tests.LoginPageTest@747ddf94]" name="verifyLogin" duration-ms="4261" started-at="2019-05-20T01:03:49Z" finished-at="2019-05-20T01:03:53Z">
+        <test-method status="FAIL" signature="verifyLogin()[pri:1, instance:com.callhub.flipkart.tests.LoginPageTest@55183b20]" name="verifyLogin" duration-ms="7331" started-at="2019-05-20T01:25:33Z" finished-at="2019-05-20T01:25:41Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Homepage=null]]>
@@ -19,7 +19,7 @@
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: Homepage=null
 at org.testng.Assert.fail(Assert.java:96)
-at com.callhub.flipkart.tests.LoginPageTest.verifyLogin(LoginPageTest.java:42)
+at com.callhub.flipkart.tests.LoginPageTest.verifyLogin(LoginPageTest.java:43)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -51,7 +51,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogin -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.callhub.flipkart.tests.LoginPageTest@747ddf94]" name="tearDown" is-config="true" duration-ms="1" started-at="2019-05-20T01:03:53Z" finished-at="2019-05-20T01:03:53Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.callhub.flipkart.tests.LoginPageTest@55183b20]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-20T01:25:41Z" finished-at="2019-05-20T01:25:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

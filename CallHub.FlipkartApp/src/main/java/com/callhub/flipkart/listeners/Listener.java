@@ -4,7 +4,9 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-public class TestNGListener implements ITestListener {
+import com.callhub.flipkart.base.Driver;
+
+public class Listener  implements ITestListener {
 
 	public void onTestStart(ITestResult result) {
 		// TODO Auto-generated method stub
@@ -21,6 +23,7 @@ public class TestNGListener implements ITestListener {
 	public void onTestFailure(ITestResult result) {
 		// TODO Auto-generated method stub
 		System.out.println(result.getMethod().getMethodName()+" Failed! ");
+		System.out.println("=============================================================================");
 		
 	}
 
