@@ -9,43 +9,39 @@ import com.callhub.flipkart.base.Driver;
 public class Listener  implements ITestListener {
 
 	public void onTestStart(ITestResult result) {
-		// TODO Auto-generated method stub
 		System.out.println(result.getMethod().getMethodName()+" Started! ");
+		System.out.println("=============================================================================");
 		
 	}
 
 	public void onTestSuccess(ITestResult result) {
-		// TODO Auto-generated method stub
 		System.out.println(result.getMethod().getMethodName()+" Success! ");
+		System.out.println("=============================================================================");
 		
 	}
 
 	public void onTestFailure(ITestResult result) {
-		// TODO Auto-generated method stub
 		System.out.println(result.getMethod().getMethodName()+" Failed! ");
 		System.out.println("=============================================================================");
 		
 	}
 
 	public void onTestSkipped(ITestResult result) {
-		// TODO Auto-generated method stub
 		System.out.println(result.getMethod().getMethodName()+" Skipped! ");
 		
 	}
 
 	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
-		// TODO Auto-generated method stub
 		
 	}
 
 	public void onStart(ITestContext context) {
 		
-		System.out.println("Starting-> "+context.getName());
-		
+				
 	}
 
 	public void onFinish(ITestContext context) {
-		System.out.println("Finished-> "+context.getName());
+		
 		
 	}
 

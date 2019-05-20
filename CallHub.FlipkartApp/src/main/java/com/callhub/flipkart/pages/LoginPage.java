@@ -64,13 +64,19 @@ public class LoginPage extends Driver {
 		}
 		loginButton.click();
 		log.info("Login button clicked.");
+		
+		try {
 		if(!errorLabel.isDisplayed()) {	
-			log.info("Logged IN..going to HomePage.");
+			log.info("Username and Password verified!..Loading to HomePage.");
 			return new Homepage();
 		}
 		else {
 			log.error("Your username or password is incorrect");
 			throw new Exception("Your username or password is incorrect");
+		}
+		}catch(NoSuchElementException e) {
+			log.info("Username and Password verified!..Loading to HomePage.");
+			return new Homepage();
 		}
 	}
 

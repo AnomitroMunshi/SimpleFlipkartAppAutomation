@@ -1,5 +1,7 @@
 package com.callhub.flipkart.tests;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -19,6 +21,7 @@ public class ProductpageTest extends Driver {
 	LoginPage loginPage;
 	Productpage productpage;
 	CartPage cart;
+	public static Logger log=LogManager.getLogger(ProductpageTest.class.getName());
 
 	public ProductpageTest() {
 		super();
@@ -27,7 +30,10 @@ public class ProductpageTest extends Driver {
 	
 	@BeforeMethod
 	public void setUp() throws Exception {
+		
+		log.info("Initializing Drivers");
 		initialize();
+		log.info("Driver loaded Traversing to LoginPage!");
 		loginPage=new LoginPage();
 		homepage=loginPage.LoginToHome(prop.getProperty("email"), prop.getProperty("pass"));
 		searchpage=homepage.Search(prop.getProperty("toSearch"));

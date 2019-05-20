@@ -24,7 +24,7 @@ public class LoginPageTest extends Driver {
 	
 	@BeforeMethod
 	public void setUp(){
-		log.info("Loading Driver");
+		log.info("Initializing Drivers");
 		initialize();
 		log.info("Driver loaded and Traversing to Login Page");
 		loginPage = new LoginPage();	
@@ -48,7 +48,7 @@ public class LoginPageTest extends Driver {
 	@AfterMethod
 	public void tearDown(){
 		log.info("Closing browser");
-		//driver.close();
+		driver.close();
 		log.info("Browser closed");
 	}
 }

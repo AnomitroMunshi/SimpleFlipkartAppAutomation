@@ -9,13 +9,18 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">17,494</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">2</td><td class="num">0</td><td class="num attn">1</td><td class="num">47,831</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.callhub.flipkart.tests.LoginPageTest</td><td><a href="#m0">verifyLogin</a></td><td rowspan="1">1558315533755</td><td rowspan="1">7331</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.callhub.flipkart.tests.HomepageTest</td><td><a href="#m0">searchProduct</a></td><td rowspan="1">1558318781845</td><td rowspan="1">222</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.callhub.flipkart.tests.HomepageTest</td><td><a href="#m1">verifyCorrectSignIn</a></td><td rowspan="1">1558318765747</td><td rowspan="1">28</td></tr><tr class="passedeven"><td><a href="#m2">verifyHomePageTitileTest</a></td><td rowspan="1">1558318749243</td><td rowspan="1">11</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.callhub.flipkart.tests.LoginPageTest#verifyLogin</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Homepage=null
+<h2>Default test</h2><h3 id="m0">com.callhub.flipkart.tests.HomepageTest#searchProduct</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Iphone7 - Buy Products Online at Best Price in India - All Categories | Flipkart.com] but found [Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books &amp; More. Best Offers!]
 	at org.testng.Assert.fail(Assert.java:96)
-	at com.callhub.flipkart.tests.LoginPageTest.verifyLogin(LoginPageTest.java:43)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.callhub.flipkart.tests.HomepageTest.searchProduct(HomepageTest.java:67)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -42,5 +47,7 @@
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.callhub.flipkart.tests.HomepageTest#verifyCorrectSignIn</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.callhub.flipkart.tests.HomepageTest#verifyHomePageTitileTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

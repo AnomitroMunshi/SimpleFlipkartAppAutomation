@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -26,6 +28,7 @@ public class SearchPageTest extends Driver {
 	LoginPage loginPage;
 	Productpage productpage;
 	List<WebElement> list1=new ArrayList<WebElement>();
+	public static Logger log=LogManager.getLogger(SearchPageTest.class.getName());
 	
 	public SearchPageTest() {
 		super();
@@ -33,7 +36,9 @@ public class SearchPageTest extends Driver {
 	
 	@BeforeMethod
 	public void setUp() throws Exception {
+		log.info("Initializing Drivers");
 		initialize();
+		log.info("Driver loaded!");
 		loginPage=new LoginPage();
 		homepage=loginPage.LoginToHome(prop.getProperty("email"), prop.getProperty("pass"));
 		searchpage=homepage.Search(prop.getProperty("toSearch"));

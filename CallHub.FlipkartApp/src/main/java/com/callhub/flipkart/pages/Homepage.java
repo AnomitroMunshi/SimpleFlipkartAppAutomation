@@ -2,6 +2,8 @@ package com.callhub.flipkart.pages;
 
 import java.util.concurrent.TimeUnit;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptException;
 import org.openqa.selenium.JavascriptExecutor;
@@ -21,6 +23,7 @@ import com.callhub.flipkart.util.TestUtil;
 
 public class Homepage extends Driver{
 
+	public static Logger log=LogManager.getLogger(Homepage.class.getName());
 	
 	@FindBy(xpath="//div[@class='_1jA3uo'][1]/child::div[1]/child::div[1]/child::span[1]/child::div[@class='_2aUbKa'][1]")
 	WebElement signerName;
@@ -38,23 +41,32 @@ public class Homepage extends Driver{
 	
 	
 	public String getTitle() {
+		log.info("Title found! Returning to HomePageTest");
 		return driver.getTitle();
 	}
 		
 	public boolean validateCorrectProfile(String s) {
 		String name=driver.findElement(By.xpath("//div[contains (text(),'"+s+"')]")).getText();
-			System.out.println("name->"+name);
-			if(s.equals(name))
+			
+			log.info("UserName found->"+name);
+			log.info("Username expected->"+s);
+			if(s.equals(name)) {
+				log.info("Username matched!");
 				return true;
-			else
+			}
+			else {
+				log.info("Username mismatch.");
 				return false;
+			}
 	}
 	
 	public SearchPage Search(String product) throws InterruptedException  {
 		
-		//TestUtil.toBeclickable(searchBox);
+		log.info("Product to search->"+product+". Typing "+product+" in search box.");
 		searchBox.sendKeys(product);
+		log.info("ImplicitWaiting");
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		log.info("Pressing Enter Key");
 		searchBox.sendKeys(Keys.ENTER);
 		
 		return new SearchPage();

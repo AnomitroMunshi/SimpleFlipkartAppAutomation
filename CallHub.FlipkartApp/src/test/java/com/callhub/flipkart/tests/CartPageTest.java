@@ -25,7 +25,7 @@ public class CartPageTest extends Driver{
 	SearchPage searchpage;
 	Productpage productpage;
 	CartPage cart;
-	public static Logger log=LogManager.getLogger(Driver.class.getName());
+	public static Logger log=LogManager.getLogger(CartPageTest.class.getName());
 
 	public CartPageTest() {
 		super();
@@ -33,6 +33,7 @@ public class CartPageTest extends Driver{
 	
 	@BeforeMethod
 	public void setUp() throws Exception {
+		log.info("Initializing Drivers");
 		initialize();
 		log.info("Driver loaded!");
 		loginPage=new LoginPage();
