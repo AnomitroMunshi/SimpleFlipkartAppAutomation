@@ -45,23 +45,56 @@ public class CartPageTest extends Driver{
 	
 	@Test(priority=1)
 	public void ScreenshotPage() throws IOException {
+		log.info("Taking Screenshot!");
 		cart.takeCartScreenshot();
+		
 	
 	}
 	
 	@Test(priority=2)
-	public void removeFromCart() {
-		if(cart.verifyCart())
-			cart.clickRemove();
+	public void removeFromCart() throws Exception {
+		if(cart.verifyCart()) {
+			log.info("In cart Page:verified!");
+			log.info("Cart size="+cart.returnCartSize());
+			if(cart.returnCartSize()==1) {
+				log.info("No.of products in cart=1");
+				cart.clickRemove();
+				log.info("Removed 1 product!");
+				log.info("Verifying cart message!");
+				String msg=cart.CartMsg();
+				log.info("Cart message="+msg);
+				Assert.assertEquals(msg, prop.getProperty("emptyCartMsg"));
+				log.info("Carts message matched!");
+			}
+			else if(cart.returnCartSize()>1) {
+				log.info("No.of products in page="+cart.returnCartSize());
+				cart.clickRemove(1);
+				log.info("Removed 1st product!");
+			}
+			else {
+				log.error("No product in cart");
+				throw new Exception("No product in cart");
+			}
+				
+		}
+		else {
+			log.error("Not in cart page!");
+			Assert.fail("Not in cart page!");
+			throw new Exception("Not in cart page!");
+			
+		}
 		
-		String msg=cart.CartMsg();
-		Assert.assertEquals(msg, prop.getProperty("emptyCartMsg"));
 	}
+	
+	
+	
 	
 	@Test(priority=3)
 	public void logoutfromApp() {
+		log.info("Searching logout button!");
 		cart.Logout();
 		Assert.assertTrue(cart.verifyLogout());
+		log.info("Logout Verified!");
 	}
 	
 	

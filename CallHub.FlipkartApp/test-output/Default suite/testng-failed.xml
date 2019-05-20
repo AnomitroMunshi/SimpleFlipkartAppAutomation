@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.callhub.flipkart.tests.HomepageTest">
+      <class name="com.callhub.flipkart.tests.CartPageTest">
         <methods>
-          <include name="teardown"/>
-          <include name="searchProduct"/>
           <include name="setUp"/>
+          <include name="teardown"/>
+          <include name="removeFromCart"/>
         </methods>
-      </class> <!-- com.callhub.flipkart.tests.HomepageTest -->
+      </class> <!-- com.callhub.flipkart.tests.CartPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

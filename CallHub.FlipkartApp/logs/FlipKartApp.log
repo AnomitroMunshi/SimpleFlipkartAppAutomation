@@ -1,49 +1,62 @@
-07:48:54.345 [main] INFO  com.callhub.flipkart.tests.HomepageTest - Initializing Drivers
-07:49:02.738 [main] INFO  com.callhub.flipkart.tests.HomepageTest - Driver loaded! Traversing to LoginPage!
-07:49:02.743 [main] INFO  com.callhub.flipkart.pages.LoginPage - initializing driver
-07:49:02.768 [main] INFO  com.callhub.flipkart.pages.LoginPage - Inside Login
-07:49:02.768 [main] INFO  com.callhub.flipkart.pages.LoginPage - clicking on email
-07:49:02.842 [main] INFO  com.callhub.flipkart.pages.LoginPage - clicked
-07:49:02.843 [main] INFO  com.callhub.flipkart.pages.LoginPage - Typing in username
-07:49:06.028 [main] INFO  com.callhub.flipkart.pages.LoginPage - Exception thrown: Continue button not present. Proceeding with normal login. 
-07:49:06.180 [main] INFO  com.callhub.flipkart.pages.LoginPage - Password entered.
-07:49:06.232 [main] INFO  com.callhub.flipkart.pages.LoginPage - Login button clicked.
-07:49:09.241 [main] INFO  com.callhub.flipkart.pages.LoginPage - Username and Password verified!..Loading to HomePage.
-07:49:09.246 [main] INFO  com.callhub.flipkart.tests.HomepageTest - verifying Title
-07:49:09.247 [main] INFO  com.callhub.flipkart.pages.Homepage - Title found! Returning to HomePageTest
-07:49:09.252 [main] INFO  com.callhub.flipkart.tests.HomepageTest - Found Title->Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books & More. Best Offers!
-07:49:09.254 [main] INFO  com.callhub.flipkart.tests.HomepageTest - Title Verified!
-07:49:11.583 [main] INFO  com.callhub.flipkart.tests.HomepageTest - Initializing Drivers
-07:49:19.181 [main] INFO  com.callhub.flipkart.tests.HomepageTest - Driver loaded! Traversing to LoginPage!
-07:49:19.182 [main] INFO  com.callhub.flipkart.pages.LoginPage - initializing driver
-07:49:19.182 [main] INFO  com.callhub.flipkart.pages.LoginPage - Inside Login
-07:49:19.182 [main] INFO  com.callhub.flipkart.pages.LoginPage - clicking on email
-07:49:19.250 [main] INFO  com.callhub.flipkart.pages.LoginPage - clicked
-07:49:19.250 [main] INFO  com.callhub.flipkart.pages.LoginPage - Typing in username
-07:49:22.522 [main] INFO  com.callhub.flipkart.pages.LoginPage - Exception thrown: Continue button not present. Proceeding with normal login. 
-07:49:22.651 [main] INFO  com.callhub.flipkart.pages.LoginPage - Password entered.
-07:49:22.707 [main] INFO  com.callhub.flipkart.pages.LoginPage - Login button clicked.
-07:49:25.746 [main] INFO  com.callhub.flipkart.pages.LoginPage - Username and Password verified!..Loading to HomePage.
-07:49:25.748 [main] INFO  com.callhub.flipkart.tests.HomepageTest - Verifying username
-07:49:25.775 [main] INFO  com.callhub.flipkart.pages.Homepage - UserName found->Sushmita
-07:49:25.775 [main] INFO  com.callhub.flipkart.pages.Homepage - Username expected->Sushmita
-07:49:25.775 [main] INFO  com.callhub.flipkart.pages.Homepage - Username matched!
-07:49:25.775 [main] INFO  com.callhub.flipkart.tests.HomepageTest - Username Verified!
-07:49:28.115 [main] INFO  com.callhub.flipkart.tests.HomepageTest - Initializing Drivers
-07:49:35.312 [main] INFO  com.callhub.flipkart.tests.HomepageTest - Driver loaded! Traversing to LoginPage!
-07:49:35.313 [main] INFO  com.callhub.flipkart.pages.LoginPage - initializing driver
-07:49:35.313 [main] INFO  com.callhub.flipkart.pages.LoginPage - Inside Login
-07:49:35.313 [main] INFO  com.callhub.flipkart.pages.LoginPage - clicking on email
-07:49:35.394 [main] INFO  com.callhub.flipkart.pages.LoginPage - clicked
-07:49:35.394 [main] INFO  com.callhub.flipkart.pages.LoginPage - Typing in username
-07:49:38.632 [main] INFO  com.callhub.flipkart.pages.LoginPage - Exception thrown: Continue button not present. Proceeding with normal login. 
-07:49:38.770 [main] INFO  com.callhub.flipkart.pages.LoginPage - Password entered.
-07:49:38.829 [main] INFO  com.callhub.flipkart.pages.LoginPage - Login button clicked.
-07:49:41.844 [main] INFO  com.callhub.flipkart.pages.LoginPage - Username and Password verified!..Loading to HomePage.
-07:49:41.848 [main] INFO  com.callhub.flipkart.tests.HomepageTest - Sending product to search!
-07:49:41.848 [main] INFO  com.callhub.flipkart.pages.Homepage - Product to search->iphone7. Typing iphone7 in search box.
-07:49:41.933 [main] INFO  com.callhub.flipkart.pages.Homepage - ImplicitWaiting
-07:49:41.937 [main] INFO  com.callhub.flipkart.pages.Homepage - Pressing Enter Key
-07:49:42.059 [main] INFO  com.callhub.flipkart.tests.HomepageTest - Traversed to search Page!
-07:49:42.059 [main] INFO  com.callhub.flipkart.pages.Homepage - Title found! Returning to HomePageTest
-07:49:42.067 [main] INFO  com.callhub.flipkart.tests.HomepageTest - New Title of the page->Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books & More. Best Offers!
+20:31:41.708 [main] INFO  com.callhub.flipkart.tests.CartPageTest - Initializing Drivers
+20:31:51.132 [main] INFO  com.callhub.flipkart.tests.CartPageTest - Driver loaded!
+20:31:51.133 [main] INFO  com.callhub.flipkart.pages.LoginPage - initializing driver
+20:31:51.158 [main] INFO  com.callhub.flipkart.pages.LoginPage - Inside Login
+20:31:51.159 [main] INFO  com.callhub.flipkart.pages.LoginPage - clicking on email
+20:31:51.244 [main] INFO  com.callhub.flipkart.pages.LoginPage - clicked
+20:31:51.244 [main] INFO  com.callhub.flipkart.pages.LoginPage - Typing in username
+20:31:54.450 [main] INFO  com.callhub.flipkart.pages.LoginPage - Exception thrown: Continue button not present. Proceeding with normal login. 
+20:31:54.603 [main] INFO  com.callhub.flipkart.pages.LoginPage - Password entered.
+20:31:54.668 [main] INFO  com.callhub.flipkart.pages.LoginPage - Login button clicked.
+20:32:01.472 [main] INFO  com.callhub.flipkart.pages.LoginPage - Username and Password verified!..Loading to HomePage.
+20:32:01.474 [main] INFO  com.callhub.flipkart.pages.Homepage - Product to search->iphone7. Typing iphone7 in search box.
+20:32:01.598 [main] INFO  com.callhub.flipkart.pages.Homepage - ImplicitWaiting
+20:32:01.603 [main] INFO  com.callhub.flipkart.pages.Homepage - Pressing Enter Key
+20:32:05.972 [main] INFO  com.callhub.flipkart.tests.CartPageTest - Taking Screenshot!
+20:32:05.973 [main] INFO  com.callhub.flipkart.pages.CartPage - Traversing to testUtil class..
+20:32:06.446 [main] INFO  com.callhub.flipkart.util.TestUtil - Screenshot captured
+20:32:07.176 [main] INFO  com.callhub.flipkart.tests.CartPageTest - Initializing Drivers
+20:32:18.143 [main] INFO  com.callhub.flipkart.tests.CartPageTest - Driver loaded!
+20:32:18.143 [main] INFO  com.callhub.flipkart.pages.LoginPage - initializing driver
+20:32:18.144 [main] INFO  com.callhub.flipkart.pages.LoginPage - Inside Login
+20:32:18.144 [main] INFO  com.callhub.flipkart.pages.LoginPage - clicking on email
+20:32:18.218 [main] INFO  com.callhub.flipkart.pages.LoginPage - clicked
+20:32:18.218 [main] INFO  com.callhub.flipkart.pages.LoginPage - Typing in username
+20:32:18.437 [main] INFO  com.callhub.flipkart.pages.LoginPage - Continue button Found! Clicking Continue!
+20:32:18.639 [main] INFO  com.callhub.flipkart.pages.LoginPage - Clicking Login with Pass
+20:32:18.804 [main] INFO  com.callhub.flipkart.pages.LoginPage - Password given
+20:32:18.856 [main] INFO  com.callhub.flipkart.pages.LoginPage - Login button clicked.
+20:32:21.899 [main] INFO  com.callhub.flipkart.pages.LoginPage - Username and Password verified!..Loading to HomePage.
+20:32:21.899 [main] INFO  com.callhub.flipkart.pages.Homepage - Product to search->iphone7. Typing iphone7 in search box.
+20:32:21.971 [main] INFO  com.callhub.flipkart.pages.Homepage - ImplicitWaiting
+20:32:21.975 [main] INFO  com.callhub.flipkart.pages.Homepage - Pressing Enter Key
+20:32:26.319 [main] INFO  com.callhub.flipkart.pages.CartPage - Title of the page=Shopping Cart | Flipkart.com
+20:32:26.319 [main] INFO  com.callhub.flipkart.tests.CartPageTest - In cart Page:verified!
+20:32:26.752 [main] INFO  com.callhub.flipkart.pages.CartPage - Returning cartsize as 2
+20:32:26.767 [main] INFO  com.callhub.flipkart.tests.CartPageTest - Cart size=2
+20:32:26.778 [main] INFO  com.callhub.flipkart.pages.CartPage - Returning cartsize as 2
+20:32:26.800 [main] INFO  com.callhub.flipkart.pages.CartPage - Returning cartsize as 2
+20:32:26.820 [main] INFO  com.callhub.flipkart.pages.CartPage - Returning cartsize as 2
+20:32:26.832 [main] INFO  com.callhub.flipkart.tests.CartPageTest - No.of products in page=2
+20:32:26.832 [main] INFO  com.callhub.flipkart.pages.CartPage - To remove 1st product. Removing.....
+20:32:26.892 [main] INFO  com.callhub.flipkart.pages.CartPage - Remove button clicked.
+20:32:26.892 [main] INFO  com.callhub.flipkart.tests.CartPageTest - Removed 1st product!
+20:32:27.670 [main] INFO  com.callhub.flipkart.tests.CartPageTest - Initializing Drivers
+20:32:36.578 [main] INFO  com.callhub.flipkart.tests.CartPageTest - Driver loaded!
+20:32:36.579 [main] INFO  com.callhub.flipkart.pages.LoginPage - initializing driver
+20:32:36.579 [main] INFO  com.callhub.flipkart.pages.LoginPage - Inside Login
+20:32:36.579 [main] INFO  com.callhub.flipkart.pages.LoginPage - clicking on email
+20:32:36.652 [main] INFO  com.callhub.flipkart.pages.LoginPage - clicked
+20:32:36.653 [main] INFO  com.callhub.flipkart.pages.LoginPage - Typing in username
+20:32:36.898 [main] INFO  com.callhub.flipkart.pages.LoginPage - Continue button Found! Clicking Continue!
+20:32:37.096 [main] INFO  com.callhub.flipkart.pages.LoginPage - Clicking Login with Pass
+20:32:37.239 [main] INFO  com.callhub.flipkart.pages.LoginPage - Password given
+20:32:37.298 [main] INFO  com.callhub.flipkart.pages.LoginPage - Login button clicked.
+20:32:40.318 [main] INFO  com.callhub.flipkart.pages.LoginPage - Username and Password verified!..Loading to HomePage.
+20:32:40.318 [main] INFO  com.callhub.flipkart.pages.Homepage - Product to search->iphone7. Typing iphone7 in search box.
+20:32:40.407 [main] INFO  com.callhub.flipkart.pages.Homepage - ImplicitWaiting
+20:32:40.414 [main] INFO  com.callhub.flipkart.pages.Homepage - Pressing Enter Key
+20:32:44.439 [main] INFO  com.callhub.flipkart.tests.CartPageTest - Searching logout button!
+20:32:44.601 [main] INFO  com.callhub.flipkart.pages.CartPage - logout clicked
+20:32:44.602 [main] INFO  com.callhub.flipkart.pages.CartPage - Verifying Login Button
+20:32:46.084 [main] INFO  com.callhub.flipkart.tests.CartPageTest - Logout Verified!
