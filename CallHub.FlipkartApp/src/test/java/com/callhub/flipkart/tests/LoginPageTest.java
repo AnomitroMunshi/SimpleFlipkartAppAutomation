@@ -30,8 +30,8 @@ public class LoginPageTest extends Driver {
 		loginPage = new LoginPage();	
 	}
 	
-	@Test(priority = 1)
-	public void verifyLogin() {
+	@Test
+	public void LoginPageVerifyLogin() {
 		log.info("Sending username and password to login page!");
 		try{
 			homepage=loginPage.LoginToHome(prop.getProperty("email"), prop.getProperty("pass"));

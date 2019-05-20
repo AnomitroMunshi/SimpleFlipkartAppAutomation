@@ -44,7 +44,7 @@ public class CartPageTest extends Driver{
 	}
 	
 	@Test(priority=1)
-	public void ScreenshotPage() throws IOException {
+	public void ScreenshotCartPage() throws IOException {
 		log.info("Taking Screenshot!");
 		cart.takeCartScreenshot();
 		
@@ -90,7 +90,7 @@ public class CartPageTest extends Driver{
 	
 	
 	@Test(priority=3)
-	public void logoutfromApp() {
+	public void logoutfromAppinCart() {
 		log.info("Searching logout button!");
 		cart.Logout();
 		Assert.assertTrue(cart.verifyLogout());

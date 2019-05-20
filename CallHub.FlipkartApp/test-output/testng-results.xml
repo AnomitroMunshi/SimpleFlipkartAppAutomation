@@ -1,49 +1,197 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="1" failed="0" ignored="0" total="11" passed="10">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="65126" started-at="2019-05-20T15:01:41Z" finished-at="2019-05-20T15:02:46Z">
+  <suite name="Suite" duration-ms="225104" started-at="2019-05-20T16:13:33Z" finished-at="2019-05-20T16:17:18Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="65126" started-at="2019-05-20T15:01:41Z" finished-at="2019-05-20T15:02:46Z">
-      <class name="com.callhub.flipkart.tests.CartPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.callhub.flipkart.tests.CartPageTest@747ddf94]" name="setUp" is-config="true" duration-ms="24267" started-at="2019-05-20T15:01:41Z" finished-at="2019-05-20T15:02:05Z">
+    <test name="LoginPageTest" duration-ms="44647" started-at="2019-05-20T16:13:33Z" finished-at="2019-05-20T16:14:18Z">
+      <class name="com.callhub.flipkart.tests.LoginPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.callhub.flipkart.tests.LoginPageTest@2a65fe7c]" name="setUp" is-config="true" duration-ms="8221" started-at="2019-05-20T16:13:33Z" finished-at="2019-05-20T16:13:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="ScreenshotPage()[pri:1, instance:com.callhub.flipkart.tests.CartPageTest@747ddf94]" name="ScreenshotPage" duration-ms="478" started-at="2019-05-20T15:02:05Z" finished-at="2019-05-20T15:02:06Z">
+        <test-method status="SKIP" signature="LoginPageVerifyLogin()[pri:0, instance:com.callhub.flipkart.tests.LoginPageTest@2a65fe7c]" name="LoginPageVerifyLogin" duration-ms="20034" started-at="2019-05-20T16:13:42Z" finished-at="2019-05-20T16:14:02Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Homepage=null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Homepage=null
+at org.testng.Assert.fail(Assert.java:96)
+at com.callhub.flipkart.tests.LoginPageTest.LoginPageVerifyLogin(LoginPageTest.java:43)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ScreenshotPage -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.callhub.flipkart.tests.CartPageTest@747ddf94]" name="teardown" is-config="true" duration-ms="726" started-at="2019-05-20T15:02:06Z" finished-at="2019-05-20T15:02:07Z">
+        </test-method> <!-- LoginPageVerifyLogin -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.callhub.flipkart.tests.LoginPageTest@2a65fe7c]" name="tearDown" is-config="true" duration-ms="77" started-at="2019-05-20T16:14:02Z" finished-at="2019-05-20T16:14:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.callhub.flipkart.tests.LoginPageTest@2a65fe7c]" name="setUp" is-config="true" duration-ms="10238" started-at="2019-05-20T16:14:02Z" finished-at="2019-05-20T16:14:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="LoginPageVerifyLogin()[pri:0, instance:com.callhub.flipkart.tests.LoginPageTest@2a65fe7c]" name="LoginPageVerifyLogin" duration-ms="3737" started-at="2019-05-20T16:14:12Z" finished-at="2019-05-20T16:14:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginPageVerifyLogin -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.callhub.flipkart.tests.LoginPageTest@2a65fe7c]" name="tearDown" is-config="true" duration-ms="2320" started-at="2019-05-20T16:14:16Z" finished-at="2019-05-20T16:14:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.callhub.flipkart.tests.LoginPageTest -->
+    </test> <!-- LoginPageTest -->
+    <test name="HomePageTest" duration-ms="52323" started-at="2019-05-20T16:14:18Z" finished-at="2019-05-20T16:15:10Z">
+      <class name="com.callhub.flipkart.tests.HomepageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.callhub.flipkart.tests.HomepageTest@443118b0]" name="setUp" is-config="true" duration-ms="12631" started-at="2019-05-20T16:14:18Z" finished-at="2019-05-20T16:14:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyHomePageTitileTest()[pri:1, instance:com.callhub.flipkart.tests.HomepageTest@443118b0]" name="verifyHomePageTitileTest" duration-ms="8" started-at="2019-05-20T16:14:31Z" finished-at="2019-05-20T16:14:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageTitileTest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.callhub.flipkart.tests.HomepageTest@443118b0]" name="teardown" is-config="true" duration-ms="2317" started-at="2019-05-20T16:14:31Z" finished-at="2019-05-20T16:14:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.callhub.flipkart.tests.CartPageTest@747ddf94]" name="setUp" is-config="true" duration-ms="19132" started-at="2019-05-20T15:02:07Z" finished-at="2019-05-20T15:02:26Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.callhub.flipkart.tests.HomepageTest@443118b0]" name="setUp" is-config="true" duration-ms="14842" started-at="2019-05-20T16:14:33Z" finished-at="2019-05-20T16:14:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="removeFromCart()[pri:2, instance:com.callhub.flipkart.tests.CartPageTest@747ddf94]" name="removeFromCart" duration-ms="583" started-at="2019-05-20T15:02:26Z" finished-at="2019-05-20T15:02:26Z">
+        <test-method status="PASS" signature="verifyHomepageCorrectSignIn()[pri:2, instance:com.callhub.flipkart.tests.HomepageTest@443118b0]" name="verifyHomepageCorrectSignIn" duration-ms="26" started-at="2019-05-20T16:14:48Z" finished-at="2019-05-20T16:14:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomepageCorrectSignIn -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.callhub.flipkart.tests.HomepageTest@443118b0]" name="teardown" is-config="true" duration-ms="2319" started-at="2019-05-20T16:14:48Z" finished-at="2019-05-20T16:14:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.callhub.flipkart.tests.HomepageTest@443118b0]" name="setUp" is-config="true" duration-ms="14674" started-at="2019-05-20T16:14:50Z" finished-at="2019-05-20T16:15:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="searchProductFromHomepage()[pri:3, instance:com.callhub.flipkart.tests.HomepageTest@443118b0]" name="searchProductFromHomepage" duration-ms="3188" started-at="2019-05-20T16:15:05Z" finished-at="2019-05-20T16:15:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchProductFromHomepage -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.callhub.flipkart.tests.HomepageTest@443118b0]" name="teardown" is-config="true" duration-ms="2312" started-at="2019-05-20T16:15:08Z" finished-at="2019-05-20T16:15:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.callhub.flipkart.tests.HomepageTest -->
+    </test> <!-- HomePageTest -->
+    <test name="SearchPageTest" duration-ms="33512" started-at="2019-05-20T16:15:10Z" finished-at="2019-05-20T16:15:44Z">
+      <class name="com.callhub.flipkart.tests.SearchPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.callhub.flipkart.tests.SearchPageTest@51399530]" name="setUp" is-config="true" duration-ms="15250" started-at="2019-05-20T16:15:10Z" finished-at="2019-05-20T16:15:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="countProductsOnPageinSearchPage()[pri:1, instance:com.callhub.flipkart.tests.SearchPageTest@51399530]" name="countProductsOnPageinSearchPage" duration-ms="777" started-at="2019-05-20T16:15:26Z" finished-at="2019-05-20T16:15:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- countProductsOnPageinSearchPage -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.callhub.flipkart.tests.SearchPageTest@51399530]" name="teardown" is-config="true" duration-ms="729" started-at="2019-05-20T16:15:26Z" finished-at="2019-05-20T16:15:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.callhub.flipkart.tests.SearchPageTest@51399530]" name="setUp" is-config="true" duration-ms="15660" started-at="2019-05-20T16:15:27Z" finished-at="2019-05-20T16:15:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="clickonProductinSearchPage()[pri:2, instance:com.callhub.flipkart.tests.SearchPageTest@51399530]" name="clickonProductinSearchPage" duration-ms="118" started-at="2019-05-20T16:15:43Z" finished-at="2019-05-20T16:15:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickonProductinSearchPage -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.callhub.flipkart.tests.SearchPageTest@51399530]" name="teardown" is-config="true" duration-ms="973" started-at="2019-05-20T16:15:43Z" finished-at="2019-05-20T16:15:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.callhub.flipkart.tests.SearchPageTest -->
+    </test> <!-- SearchPageTest -->
+    <test name="ProductpageTest" duration-ms="21131" started-at="2019-05-20T16:15:44Z" finished-at="2019-05-20T16:16:05Z">
+      <class name="com.callhub.flipkart.tests.ProductpageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.callhub.flipkart.tests.ProductpageTest@62379589]" name="setUp" is-config="true" duration-ms="16282" started-at="2019-05-20T16:15:44Z" finished-at="2019-05-20T16:16:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyCartAdditionfromProductPage()[pri:0, instance:com.callhub.flipkart.tests.ProductpageTest@62379589]" name="verifyCartAdditionfromProductPage" duration-ms="4139" started-at="2019-05-20T16:16:00Z" finished-at="2019-05-20T16:16:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCartAdditionfromProductPage -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.callhub.flipkart.tests.ProductpageTest@62379589]" name="teardown" is-config="true" duration-ms="707" started-at="2019-05-20T16:16:04Z" finished-at="2019-05-20T16:16:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.callhub.flipkart.tests.ProductpageTest -->
+    </test> <!-- ProductpageTest -->
+    <test name="CartpageTest" duration-ms="73372" started-at="2019-05-20T16:16:05Z" finished-at="2019-05-20T16:17:18Z">
+      <class name="com.callhub.flipkart.tests.CartPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.callhub.flipkart.tests.CartPageTest@557caf28]" name="setUp" is-config="true" duration-ms="21706" started-at="2019-05-20T16:16:05Z" finished-at="2019-05-20T16:16:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="ScreenshotCartPage()[pri:1, instance:com.callhub.flipkart.tests.CartPageTest@557caf28]" name="ScreenshotCartPage" duration-ms="355" started-at="2019-05-20T16:16:27Z" finished-at="2019-05-20T16:16:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ScreenshotCartPage -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.callhub.flipkart.tests.CartPageTest@557caf28]" name="teardown" is-config="true" duration-ms="700" started-at="2019-05-20T16:16:27Z" finished-at="2019-05-20T16:16:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.callhub.flipkart.tests.CartPageTest@557caf28]" name="setUp" is-config="true" duration-ms="26523" started-at="2019-05-20T16:16:28Z" finished-at="2019-05-20T16:16:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="removeFromCart()[pri:2, instance:com.callhub.flipkart.tests.CartPageTest@557caf28]" name="removeFromCart" duration-ms="278" started-at="2019-05-20T16:16:54Z" finished-at="2019-05-20T16:16:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- removeFromCart -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.callhub.flipkart.tests.CartPageTest@747ddf94]" name="teardown" is-config="true" duration-ms="776" started-at="2019-05-20T15:02:26Z" finished-at="2019-05-20T15:02:27Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.callhub.flipkart.tests.CartPageTest@557caf28]" name="teardown" is-config="true" duration-ms="679" started-at="2019-05-20T16:16:55Z" finished-at="2019-05-20T16:16:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.callhub.flipkart.tests.CartPageTest@747ddf94]" name="setUp" is-config="true" duration-ms="16768" started-at="2019-05-20T15:02:27Z" finished-at="2019-05-20T15:02:44Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.callhub.flipkart.tests.CartPageTest@557caf28]" name="setUp" is-config="true" duration-ms="20452" started-at="2019-05-20T16:16:55Z" finished-at="2019-05-20T16:17:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="logoutfromApp()[pri:3, instance:com.callhub.flipkart.tests.CartPageTest@747ddf94]" name="logoutfromApp" duration-ms="1647" started-at="2019-05-20T15:02:44Z" finished-at="2019-05-20T15:02:46Z">
+        <test-method status="PASS" signature="logoutfromAppinCart()[pri:3, instance:com.callhub.flipkart.tests.CartPageTest@557caf28]" name="logoutfromAppinCart" duration-ms="1949" started-at="2019-05-20T16:17:16Z" finished-at="2019-05-20T16:17:18Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logoutfromApp -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.callhub.flipkart.tests.CartPageTest@747ddf94]" name="teardown" is-config="true" duration-ms="727" started-at="2019-05-20T15:02:46Z" finished-at="2019-05-20T15:02:46Z">
+        </test-method> <!-- logoutfromAppinCart -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.callhub.flipkart.tests.CartPageTest@557caf28]" name="teardown" is-config="true" duration-ms="725" started-at="2019-05-20T16:17:18Z" finished-at="2019-05-20T16:17:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.callhub.flipkart.tests.CartPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- CartpageTest -->
+  </suite> <!-- Suite -->
 </testng-results>

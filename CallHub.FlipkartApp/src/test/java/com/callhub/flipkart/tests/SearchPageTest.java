@@ -42,27 +42,36 @@ public class SearchPageTest extends Driver {
 		loginPage=new LoginPage();
 		homepage=loginPage.LoginToHome(prop.getProperty("email"), prop.getProperty("pass"));
 		searchpage=homepage.Search(prop.getProperty("toSearch"));
+		if(searchpage!=null) {
+			log.info("Traversed to search page");
+		}
+		else {
+			throw new Exception("Search Page Traversal failed!");
+		}
 	}
 	
 	@Test(priority=1)
-	public void countProductsOnPage() throws InterruptedException {
+	public void countProductsOnPageinSearchPage() throws InterruptedException {
 		List<WebElement> l=searchpage.returnProductCount();
 		list1.addAll(l);
 		searchpage.nextpage();
+		log.info("Choosing 1st product of 2nd page");
 		list1.add(searchpage.choos1stProduct());
-		System.out.println(list1.size());
+		log.info("total selected items: "+list1.size());
 		Assert.assertEquals(Integer.toString(list1.size()),prop.getProperty("productCount"));
+		log.info("Verified product count");
 		
 	}
 	
 	@Test(priority=2)
-	public void clickonProduct() {
+	public void clickonProductinSearchPage() {
 		productpage=searchpage.choos1stProductAndClick();
 	}
 	
 	@AfterMethod
 	public void teardown() {
-		driver.close();
+		log.info("Closing browser");
+		driver.quit();
 		
 	}
 }

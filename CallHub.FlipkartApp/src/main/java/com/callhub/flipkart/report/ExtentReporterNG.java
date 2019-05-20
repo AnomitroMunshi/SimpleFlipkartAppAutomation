@@ -5,7 +5,10 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
- 
+
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.testng.IReporter;
 import org.testng.IResultMap;
 import org.testng.ISuite;
@@ -20,7 +23,7 @@ import com.relevantcodes.extentreports.LogStatus;
  
 public class ExtentReporterNG implements IReporter {
     private ExtentReports extent;
- 
+    public static Logger log=LogManager.getLogger(ExtentReporterNG.class.getName());
     public void generateReport(List<XmlSuite> xmlSuites, List<ISuite> suites, String outputDirectory) {
         extent = new ExtentReports(outputDirectory + File.separator + "ExtentReportsTestNG"+System.currentTimeMillis()+".html", true);
  
@@ -36,7 +39,9 @@ public class ExtentReporterNG implements IReporter {
             }
         }
  
+        log.info("Creating Extent Report...");
         extent.flush();
+        log.info("Report created!");
         extent.close();
     }
  

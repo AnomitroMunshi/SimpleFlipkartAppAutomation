@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.callhub.flipkart.listeners.MyTrnasformer"/>
+    <listener class-name="com.callhub.flipkart.report.ExtentReporterNG"/>
+    <listener class-name="com.callhub.flipkart.listeners.Listener"/>
+  </listeners>
+  <test thread-count="5" name="LoginPageTest(failed)">
     <classes>
-      <class name="com.callhub.flipkart.tests.CartPageTest">
+      <class name="com.callhub.flipkart.tests.LoginPageTest">
         <methods>
+          <include name="LoginPageVerifyLogin"/>
           <include name="setUp"/>
-          <include name="teardown"/>
-          <include name="removeFromCart"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.callhub.flipkart.tests.CartPageTest -->
+      </class> <!-- com.callhub.flipkart.tests.LoginPageTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- LoginPageTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -4,16 +4,17 @@
   <listeners>
     <listener class-name="com.callhub.flipkart.listeners.MyTrnasformer"/>
     <listener class-name="com.callhub.flipkart.report.ExtentReporterNG"/>
+    <listener class-name="com.callhub.flipkart.listeners.Listener"/>
   </listeners>
-  <test thread-count="5" name="CartpageTest(failed)">
+  <test thread-count="5" name="LoginPageTest(failed)">
     <classes>
-      <class name="com.callhub.flipkart.tests.CartPageTest">
+      <class name="com.callhub.flipkart.tests.LoginPageTest">
         <methods>
+          <include name="LoginPageVerifyLogin"/>
           <include name="setUp"/>
-          <include name="teardown"/>
-          <include name="removeFromCart"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.callhub.flipkart.tests.CartPageTest -->
+      </class> <!-- com.callhub.flipkart.tests.LoginPageTest -->
     </classes>
-  </test> <!-- CartpageTest(failed) -->
+  </test> <!-- LoginPageTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

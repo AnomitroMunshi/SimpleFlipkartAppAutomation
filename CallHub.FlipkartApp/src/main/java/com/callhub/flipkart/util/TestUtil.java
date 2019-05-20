@@ -36,26 +36,7 @@ public class TestUtil extends Driver {
 		log.info("Screenshot captured");
 	}
 
-	public static void blinkHighlight(WebElement element,WebDriver driver) {
-		
-		JavascriptExecutor js=(JavascriptExecutor)driver;
-		String bgColor=element.getCssValue("backgroundColor");
-		for(int i=0;i<10;i++) {
-			changeColor("rgb(0,200,0)",element,driver);//1
-			changeColor(bgColor, element, driver);//2
-			
-		}
-	}
-	public static void changeColor(String color, WebElement element, WebDriver driver) {
-		JavascriptExecutor js=(JavascriptExecutor)driver;
-		js.executeScript("arguments[0].style.backgroundColor='"+color+"'", element);
-		try {
-			Thread.sleep(20);
-		}
-		catch(Exception e) {
-			
-		}
-	}
+	
 	
 	public static void toBeclickable(WebElement element)
 	{

@@ -48,7 +48,7 @@ public class HomepageTest extends Driver {
 	
 
 	@Test(priority=2)
-	public void verifyCorrectSignIn() {
+	public void verifyHomepageCorrectSignIn() {
 		log.info("Verifying username");
 		boolean result = homepage.validateCorrectProfile(prop.getProperty("Checkname"));
 		Assert.assertTrue(result);
@@ -56,7 +56,7 @@ public class HomepageTest extends Driver {
 	}
 
 	@Test(priority=3)
-	public void searchProduct() throws InterruptedException {
+	public void searchProductFromHomepage() throws InterruptedException {
 		log.info("Sending product to search!");
 		searchpage=homepage.Search(prop.getProperty("toSearch"));
 		try {

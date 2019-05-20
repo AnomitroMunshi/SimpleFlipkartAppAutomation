@@ -38,10 +38,17 @@ public class ProductpageTest extends Driver {
 		homepage=loginPage.LoginToHome(prop.getProperty("email"), prop.getProperty("pass"));
 		searchpage=homepage.Search(prop.getProperty("toSearch"));
 		productpage=searchpage.choos1stProductAndClick();
+		if(productpage!=null) {
+			log.info("Traversed to product page");
+		}
+		else {
+			throw new Exception("traversal to productpage failed!");
+		}
 	}
 
 	@Test
-	public void verifyCartAddition() throws InterruptedException {
+	public void verifyCartAdditionfromProductPage() throws InterruptedException {
+		
 		cart=productpage.addProductToCart();
 		
 	}
@@ -49,6 +56,7 @@ public class ProductpageTest extends Driver {
 	
 	@AfterMethod
 	public void teardown() {
+		log.info("Closing browsers");
 		driver.quit();
 		
 	}

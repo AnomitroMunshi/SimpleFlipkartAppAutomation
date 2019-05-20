@@ -65,10 +65,9 @@ public class Homepage extends Driver{
 		log.info("Product to search->"+product+". Typing "+product+" in search box.");
 		searchBox.sendKeys(product);
 		log.info("ImplicitWaiting");
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		log.info("Pressing Enter Key");
 		searchBox.sendKeys(Keys.ENTER);
-		
+		Thread.sleep(3000);
 		return new SearchPage();
 		
 	}

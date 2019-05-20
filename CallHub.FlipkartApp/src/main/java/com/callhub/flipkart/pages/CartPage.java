@@ -56,6 +56,7 @@ public class CartPage extends Driver {
 	
 	public void takeCartScreenshot() throws IOException {
 		log.info("Traversing to testUtil class..");
+		
 		TestUtil.CaptureScreenshot();
 	}
 	
