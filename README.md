@@ -7,7 +7,9 @@ Important Points:
 2. User need to provide their own emailId,password and username in properties file.
 
 	email=youremail
+	
 	pass=yourpassword
+	
 	Checkname=yourusername
 	
 2. Path for browser is provided by OsPath.java class inside com.callhub.flipkart.base package.
