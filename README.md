@@ -22,6 +22,7 @@ Important Points:
 Note :: All tescases are independent of each other.
 
 Overall test scenario:
+
 a) Login to flipkart.com (assume you have a login with flipkart)
 
 b) After login, search for iPhone7 in Electronics section
