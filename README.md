@@ -12,13 +12,13 @@ Important Points:
 	
 	Checkname=yourusername
 	
-2.Path for browser is provided by OsPath.java class inside com.callhub.flipkart.base package.
+3. Path for browser is provided by OsPath.java class inside com.callhub.flipkart.base package.
 
-3.Browser exe driver files are available in com.callhub.flipkart.resources package
+4. Browser exe driver files are available in com.callhub.flipkart.resources package
 
-4.Extent report is generated inside test-output folder.
+5. Extent report is generated inside test-output folder.
 
-5.Log file is generated inside Log folder.
+6. Log file is generated inside Log folder.
 
 
 Note:: Trigger the suite by running testng.xml.
