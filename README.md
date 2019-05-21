@@ -12,7 +12,7 @@ Important Points:
 	
 	Checkname=yourusername
 	
-2. Path for browser is provided by OsPath.java class inside com.callhub.flipkart.base package.
+2.Path for browser is provided by OsPath.java class inside com.callhub.flipkart.base package.
 
 3.Browser exe driver files are available in com.callhub.flipkart.resources package
 
