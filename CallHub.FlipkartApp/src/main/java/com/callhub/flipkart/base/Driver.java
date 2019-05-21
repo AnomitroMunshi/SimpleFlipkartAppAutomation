@@ -45,7 +45,7 @@ public class Driver  {
 	
 	public static void initialize(){
 		String browserName = prop.getProperty("Browser");
-		log.info("Browser initialized->="+browserName);
+		log.info("Getting browser from property file");
 		
 		if(browserName.equals("chrome")){
 			System.setProperty("webdriver.chrome.driver",OsPath.getPath(browserName));	
