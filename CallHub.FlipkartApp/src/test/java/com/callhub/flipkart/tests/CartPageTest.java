@@ -44,10 +44,15 @@ public class CartPageTest extends Driver{
 	}
 	
 	@Test(priority=1)
-	public void ScreenshotCartPage() throws IOException {
+	public void ScreenshotCartPage() throws Exception {
+		if(cart.verifyCart()) {
 		log.info("Taking Screenshot!");
 		cart.takeCartScreenshot();
-		
+		}else {
+			log.error("Not in cart Page! Not taking screenshot!");
+			Assert.fail("Not in cart Page! Not taking screenshot!");
+			throw new Exception("Not in cart Page! Not taking screenshot!");
+		}
 	
 	}
 	

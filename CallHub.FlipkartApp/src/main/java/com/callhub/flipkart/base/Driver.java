@@ -53,7 +53,7 @@ public class Driver  {
 			driver = new ChromeDriver(); 
 		}
 		else if(browserName.equals("FF")){
-			System.setProperty("webdriver.chrome.driver",OsPath.getPath(browserName));	
+			System.setProperty("webdriver.gecko.driver",OsPath.getPath(browserName));	
 			log.info("Loading firefox driver");
 			driver = new FirefoxDriver(); 
 		}
