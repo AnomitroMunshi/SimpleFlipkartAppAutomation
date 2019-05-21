@@ -35,6 +35,8 @@ public class Listener  implements ITestListener {
 	public void onTestSkipped(ITestResult result) {
 		System.out.println(result.getMethod().getMethodName()+" test Skipped! ");
 		log.info(result.getMethod().getMethodName()+"test skipped! ");
+		log.info("Retrying...........");
+		System.out.println("=============================================================================");
 		
 	}
 
