@@ -39,11 +39,11 @@ public class LoginPage extends Driver {
 	}
 	
 	public Homepage LoginToHome(String username,String pass) throws Exception {
-		log.info("Inside Login");
+		
 		log.info("clicking on email");
 		email.click();
 		log.info("clicked");
-		log.info("Typing in username");
+		log.info("Typing username");
 		email.sendKeys(username);
 		try {
 			driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
@@ -51,10 +51,10 @@ public class LoginPage extends Driver {
 			conti.click();
 			log.info("Continue button Found! Clicking Continue!");
 			loginwithpass.click();
-			log.info("Clicking Login with Pass");
+			log.info("Clicking Login with Password");
 			password.click();
 			password.sendKeys(pass);
-			log.info("Password given");
+			log.info("Password typed");
 		}
 		catch(NoSuchElementException e) {
 			log.info("Exception thrown: Continue button not present. Proceeding with normal login. ");
@@ -67,7 +67,7 @@ public class LoginPage extends Driver {
 		
 		try {
 		if(!errorLabel.isDisplayed()) {	
-			log.info("Username and Password verified!..Loading to HomePage.");
+			log.info("Username and Password verified!..Loading HomePage...");
 			return new Homepage();
 		}
 		else {

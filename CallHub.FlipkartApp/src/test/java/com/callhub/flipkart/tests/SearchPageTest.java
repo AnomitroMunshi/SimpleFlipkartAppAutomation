@@ -41,6 +41,14 @@ public class SearchPageTest extends Driver {
 		log.info("Driver loaded!");
 		loginPage=new LoginPage();
 		homepage=loginPage.LoginToHome(prop.getProperty("email"), prop.getProperty("pass"));
+		try{
+			homepage=loginPage.LoginToHome(prop.getProperty("email"), prop.getProperty("pass"));
+			if(homepage!=null) {
+				log.info("Successfully Logged in! Loading to homepage.");
+			}
+		}catch(Exception e) {
+			log.error("Login failed!");
+		}
 		searchpage=homepage.Search(prop.getProperty("toSearch"));
 		if(searchpage!=null) {
 			log.info("Traversed to search page");
@@ -70,8 +78,8 @@ public class SearchPageTest extends Driver {
 	
 	@AfterMethod
 	public void teardown() {
-		log.info("Closing browser");
+		log.info("Closing browser..");
 		driver.quit();
-		
+		log.info("Browser closed!");
 	}
 }

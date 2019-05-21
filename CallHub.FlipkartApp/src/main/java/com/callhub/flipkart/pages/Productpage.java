@@ -26,6 +26,7 @@ public class Productpage extends Driver{
 		log.info("Waiting for adding to cart");
 		Thread.sleep(3000);
 		log.info("Traversing to cart page....");
+		
 		return new CartPage();
 		
 	}

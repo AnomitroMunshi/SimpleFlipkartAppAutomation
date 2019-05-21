@@ -97,7 +97,7 @@ public class CartPage extends Driver {
 	}
 	
 	public int returnCartSize() {
-		log.info("Returning cartsize as "+cartlist.size());
+		log.info("There are "+cartlist.size()+" products in the cart");
 		return cartlist.size();
 	}
 	

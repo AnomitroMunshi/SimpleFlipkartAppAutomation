@@ -24,9 +24,10 @@ public class LoginPageTest extends Driver {
 	
 	@BeforeMethod
 	public void setUp(){
+		log.info("=======Starting Login Page Test========");
 		log.info("Initializing Drivers");
 		initialize();
-		log.info("Driver loaded and Traversing to Login Page");
+		log.info("Driver loaded ... Traversing to Login Page");
 		loginPage = new LoginPage();	
 	}
 	
@@ -36,7 +37,7 @@ public class LoginPageTest extends Driver {
 		try{
 			homepage=loginPage.LoginToHome(prop.getProperty("email"), prop.getProperty("pass"));
 			if(homepage!=null) {
-				log.info("Successfully Logged in");
+				log.info("Successfully Logged in!");
 				}
 			}catch(Exception e) {
 				log.error("Login failed!");

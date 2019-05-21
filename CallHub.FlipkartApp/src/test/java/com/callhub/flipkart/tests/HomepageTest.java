@@ -28,19 +28,28 @@ public class HomepageTest extends Driver {
 
 	@BeforeMethod
 	public void setUp() throws Exception {
+		log.info("======Starting HomePage Test!=========");
 		log.info("Initializing Drivers");
 		initialize();
 		log.info("Driver loaded! Traversing to LoginPage!");
 		login=new LoginPage();
-		homepage = login.LoginToHome(prop.getProperty("email"), prop.getProperty("pass"));
+		log.info("login page initialized");
+		try{
+			homepage=login.LoginToHome(prop.getProperty("email"), prop.getProperty("pass"));
+			if(homepage!=null) {
+				log.info("Successfully Logged in! Loading to homepage.");
+				}
+			}catch(Exception e) {
+				log.error("Login failed!");
+			}
 		
 	}
 
 	@Test(priority=1)
 	public void verifyHomePageTitileTest() {
-		log.info("verifying Title");
+		log.info("verifying HomePageTitle");
 		String title = homepage.getTitle();
-		log.info("Found Title->"+title);
+		log.info("Found homePageTitle->"+title);
 		Assert.assertEquals(title,prop.getProperty("homePageTitle"));
 		log.info("Title Verified!");
 	}
@@ -57,7 +66,7 @@ public class HomepageTest extends Driver {
 
 	@Test(priority=3)
 	public void searchProductFromHomepage() throws InterruptedException {
-		log.info("Sending product to search!");
+		log.info("typing product name in search bar.....");
 		searchpage=homepage.Search(prop.getProperty("toSearch"));
 		try {
 			if(searchpage!=null) {
@@ -78,6 +87,8 @@ public class HomepageTest extends Driver {
 
 	@AfterMethod
 	public void teardown() {
+		log.info("Closing browser...");
 		 driver.close();
+		 log.info("Browser closed!");
 	}
 }
