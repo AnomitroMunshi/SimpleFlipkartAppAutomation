@@ -40,7 +40,7 @@ public class CartPageTest extends Driver{
 		loginPage=new LoginPage();
 		homepage=loginPage.LoginToHome(prop.getProperty("email"), prop.getProperty("pass"));
 		try{
-			homepage=loginPage.LoginToHome(prop.getProperty("email"), prop.getProperty("pass"));
+			//homepage=loginPage.LoginToHome(prop.getProperty("email"), prop.getProperty("pass"));
 			if(homepage!=null) {
 				log.info("Successfully Logged in! Loading to homepage.");
 			}

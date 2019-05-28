@@ -44,7 +44,7 @@ public class SearchPage extends Driver {
 		
 		log.info("Scrolling down to the bottom of the page");
 		PageScroll.toBottomOfPage();
-		log.info("Scrolling down to the top of the page");
+		log.info("Scrolling to the top of the page");
 		PageScroll.toUP();
 		log.info("Returning list of products");
 		List<WebElement> list=ProductList;
