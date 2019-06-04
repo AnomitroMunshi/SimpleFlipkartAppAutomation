@@ -1,4 +1,4 @@
-# CallhubFlipkartApp
+# SimpleFlipkartAppAutomation
 Framework for flipkart assessment
 ******************************************************************************************************************************************
 Important Points:
